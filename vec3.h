@@ -16,10 +16,10 @@ public:
 	double& operator[](int i) { return e[i]; }
 
 
-	vec3& operator+=(vec3& other) {
-		this->e[0] += other.e[0];
-		this->e[1] += other.e[1];
-		this->e[2] += other.e[2];
+	vec3& operator+=(const vec3& v) {
+		e[0] += v.e[0];
+		e[1] += v.e[1];
+		e[2] += v.e[2];
 		return *this;
 	}
 
